@@ -16,7 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "§/*": ["./*"]
+      "§/*": ["./src/*"],
+      "§/public/*": ["./public/*"],
+      "§/styles/*": ["./styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
