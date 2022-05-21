@@ -1,10 +1,11 @@
-import { Container, Link as MuiLink, Paper, Typography } from "@mui/material";
+import { Container, Paper, Typography } from "@mui/material";
 import clsx from "clsx";
 import { useDarkMode } from "next-dark-mode";
 import React from "react";
 
 import { DarkModeButtons } from "§/components";
 
+import Fluff from "./Fluff";
 import useStyles from "./HomeContent.styles";
 
 const HomeContent = () => {
@@ -19,30 +20,7 @@ const HomeContent = () => {
 
   return (
     <Container component="main" className={classes.mainContainer}>
-      <Typography variant="h1" className={classes.title}>
-        TSS and Next-Dark-Mode
-      </Typography>
-
-      <Typography>Welcome! 🙂</Typography>
-
-      <Typography>
-        This is an example of how to use{" "}
-        <MuiLink href="https://docs.tss-react.dev" target="_blank">
-          tss-react
-        </MuiLink>{" "}
-        with{" "}
-        <MuiLink
-          href="https://github.com/xeoneux/next-dark-mode"
-          target="_blank"
-        >
-          next-dark-mode
-        </MuiLink>{" "}
-        and{" "}
-        <MuiLink href="https://mui.com" target="_blank">
-          Material UI
-        </MuiLink>
-        .
-      </Typography>
+      <Fluff />
 
       <div className={classes.centeredContainer}>
         <Paper className={classes.paper}>
